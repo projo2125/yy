@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paappan's gang membership.login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url("https://img.nowrunning.com/content/movie/2017/aadu-20450/Stills/Aadu-2-movie-19.jpg");
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }  
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff00;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #33333300;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="userForm" onsubmit="return validateForm()">
+        <h2>onnum nookanda kerikko</h2>
+        <label for="name"><b> peru entha:</b></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="place"><b>sthaloo:</b></label>
+        <input type="text" id="place" name="place" placeholder="Enter your place" required>
+
+        <label for="phone"><b>aa Number kude ing parada uvee:</b></label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="message"><b>vadam vali membership venno:</b></label>
+        <textarea id="message" name="message" placeholder="Any additional information"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            // You can add custom validation logic here if needed
+            return true; // To allow form submission
+        }
+    </script>
+</body>
+</html>
